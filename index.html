@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <title>GAZA RELIEF</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <header>
+      <nav
+        class="p-5 px-10 md:px-28 bg-black shadow md:flex md:items-center md:justify-between top-0 fixed w-full z-50 transition-all ease-in duration-500"
+      >
+        <div class="flex justify-between items-center">
+          <span
+            class="text-3xl font-bold font-[Poppins] text-white cursor-pointer"
+          >
+            <img class="w-12 h-12 rounded-full inline" src="Logo1.jpeg" />
+            ICG
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon
+              class="text-white"
+              name="menu"
+              onclick="Menu(this)"
+            ></ion-icon>
+          </span>
+        </div>
+
+        <ul
+          class="md:flex max-md:h-screen max-md:bg-black pl-28 text-white md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="hover:text-[#FF9700] font-mono duration-500"
+              onclick="closeMenu()"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0" onclick="Menu(this)">
+            <a
+              href="#why-donate"
+              class="hover:text-[#FF9700] font-mono duration-500"
+              onclick="closeMenu()"
+              >Why Donate</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0" onclick="Menu(this)">
+            <a
+              href="#who-we-are"
+              class="hover:text-[#FF9700] font-mono duration-500"
+              onclick="closeMenu()"
+              >Who We Are</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/icg_community_guidance?igsh=MzRlODBiNWFlZA=="
+              class="hover:text-[#FF9700] font-mono duration-500"
+              onclick="closeMenu()"
+              >Contact Us</a
+            >
+          </li>
+
+          <button
+            class="bg-[#FF9700] md:hidden text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded"
+          >
+            <a href="https://chuffed.org/pay/campaign/108982"> Donate Now </a>
+          </button>
+          <h2 class=""></h2>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-[87px]">
+      <section class="hero">
+        <div class="content">
+          <h2 class="text-4xl mb-3 font-mono">
+            International Community Guidance
+          </h2>
+          <h3 class="text-sm font-mono">
+            Join us in making a difference by contributing to our cause. Your
+            donation will help us to continue our important work and make a
+            positive impact in the community.
+          </h3>
+          <div class="buttons flex justify-center gap-16">
+            <button
+              class="bg-[#FF9700] px-5 py-3 max-md:px-20 rounded-xl text-black font-mono font-extralight"
+            >
+              <a
+                href="https://chuffed.org/pay/campaign/108982"
+                rel="noopener noreferrer"
+                >Donate Now</a
+              >
+            </button>
+            <button
+              class="bg-transparent max-md:hidden px-5 py-3 rounded-xl text-white font-mono border-white border-2 font-extralight"
+            >
+              <a
+                href="https://www.instagram.com/icg_community_guidance/?igsh=MzRlODBiNWFlZA%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex bg-gray-100 justify-between max-md:flex-col max-md:gap-5 pl-10 md:pl-20 pr-[200px] py-[50px]"
+        id="why-donate"
+      >
+        <div class="flex flex-col">
+          <h1 class="min-w-[320px] text-xl font-bold text-start font-[Poppins]">
+            Urgent Appeal: Help Save Mahmoud's Life After IDF Bombing
+          </h1>
+          <p
+            class="min-w-[320px] max-w-[670px] mt-5 font-[Poppins] text-justify"
+          >
+            We are reaching out to you because Mahmoud and Diana, a couple in
+            Gaza, are facing a devastating crisis, and they desperately need
+            your help. Just a few days ago, Mahmoud was severely injured in a
+            bombing by the IDF, resulting in the loss of both of his legs. Now,
+            he's in critical condition, at risk of serious infections and
+            stroke. Adding to their hardship, Diana recently gave birth to their
+            baby without any anesthesia, and their three-year-old daughter is
+            relying on her father's love and support. The thought of Mahmoud's
+            children growing up without him is heartbreaking. Living in Gaza
+            amidst the ongoing turmoil, Mahmoud and Diana are struggling to cope
+            with the aftermath of this tragedy. The situation is dire, and
+            unfortunately, there are no adequate medical facilities or treatment
+            available there for Mahmoud. He is at risk of losing his life
+            without urgent medical intervention. The only hope for his treatment
+            lies in leaving Gaza to receive the necessary care elsewhere.
+            However, this option comes with its own set of challenges, including
+            logistical and financial hurdles. Mahmoud and Diana need your
+            support to facilitate his evacuation and ensure he receives the
+            life-saving treatment he urgently requires.
+          </p>
+        </div>
+        <div
+          class="min-w-[300px] flex flex-col gap-5 h-[463px] rounded-2xl bg-white overflow-hidden border-[#EDEDED] border-[1px]"
+        >
+          <img class="h-3/5" src="Card1.Webp" alt="" class="w-full h-full" />
+          <h2 class="text-center font-[Poppins] tracking-wide font-normal">
+            Changing the World
+          </h2>
+          <p class="text-center font-[Poppins] text-sm font-thin">
+            Your Contribution Matters
+          </p>
+          <button
+            class="bg-black w-[150px] self-center px-5 py-3 rounded-xl text-white font-mono font-extralight"
+          >
+            <a
+              href="https://chuffed.org/pay/campaign/108982"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Donate Now</a
+            >
+          </button>
+        </div>
+      </section>
+      <section class="photo-gallery items-center flex-col">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+          Our Work
+        </h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <span>Solidarity</span>
+              <div>
+                <h2>Feeding Families in North Gaza</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  North of Gaza
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <span>Community</span>
+              <div>
+                <h2>Serving the Hungry in North Gaza</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  North of Gaza
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--three">
+              <span>Resilience</span>
+              <div>
+                <h2>Food Distribution in North Gaza</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  North of Gaza
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--four">
+              <span>Connection</span>
+              <div>
+                <h2>Supporting Families</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  North of Gaza
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--five">
+              <span>Compassion</span>
+              <div>
+                <h2>Sustaining Communities in North Gaza</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                  North of Gaza
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section
+        class="bg-gray-100 px-4 md:pl-20 md:pr-[200px] py-8 md:py-[50px]"
+        id="who-we-are"
+      >
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-center md:my-8"
+        >
+          <div class="w-full md:w-1/2 mx-4">
+            <div class="text-center">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                About Us
+              </h2>
+              <p
+                class="text-gray-700 text-sm md:text-base lg:text-lg xl:text-xl text-justify"
+              >
+                At International Community Guidance (ICG), our mission is to
+                provide unwavering support and guidance to refugees,
+                particularly women, as they navigate the challenges of
+                resettlement in the United States. With a dedicated focus on
+                empowering women and fostering community integration, we strive
+                to create a welcoming environment where all refugees can thrive
+                and build fulfilling lives. Additionally, we are committed to
+                extending our impact beyond U.S. borders by collecting charity
+                to assist people in need overseas. Through tailored programs,
+                advocacy, and charitable initiatives, we aim to equip
+                individuals with the resources and support necessary to overcome
+                obstacles and achieve their full potential, both locally and
+                globally. Together, we are dedicated to fostering a world where
+                every refugee, especially women, is embraced with dignity,
+                respect, and the opportunity to flourish, regardless of
+                geographical boundaries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full h-20 bg-black flex items-center text-white">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; 2024 International Community Guidance. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+      function closeMenu() {
+        let list = document.querySelector("ul");
+        let menuIcon = document.querySelector("ion-icon[name='menu']");
+        list.classList.remove("top-[80px]");
+        list.classList.remove("opacity-100");
+        menuIcon.name = "menu";
+      }
+
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        spaceBetween: 60,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
